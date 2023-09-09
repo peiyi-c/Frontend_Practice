@@ -1,0 +1,8 @@
+@use "./App.scss" as *;
+
+.magazines {
+  height: 100%;
+  @include breakpoint-up(large) {
+    scroll-snap-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+@use "./App.scss" as *;
+
+.header {
+  padding: 20px 15px;
+  padding-bottom: 0px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include breakpoint-up(large) {
+    position: sticky;
+    top: 0;
+
+    scroll-snap-align: top;
+  }
+
+  &__img {
+    width: 160px;
+    height: auto;
+
+    @include breakpoint-up(medium) {
+      width: 260px;
+    }
+  }
+
+  &__link {
+    display: none;
+    @include breakpoint-up(large) {
+      display: inline-block;
+    }
+  }
+}

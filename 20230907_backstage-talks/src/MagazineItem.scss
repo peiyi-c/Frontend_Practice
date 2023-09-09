@@ -1,0 +1,28 @@
+@use "./App.scss" as *;
+
+.magazine {
+  height: 900px;
+
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint-up(large) {
+    scroll-snap-align: center;
+  }
+
+  &__img {
+    width: 420px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    > p {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
