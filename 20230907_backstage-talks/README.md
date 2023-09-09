@@ -1,6 +1,6 @@
 # Frontend Practice - Backstage Talks Replica
 
-This is a re-creation of the website [Backstage Talks - Magazine Archive ](https://www.frontendpractice.com/projects/backstage-talks), a Level-1 challenge on Frontend Practice.
+This is a re-creation of the website [Backstage Talks - Magazine Archive](https://www.frontendpractice.com/projects/backstage-talks), a Level-1 challenge on Frontend Practice.
 
 ## Table of contents
 
@@ -28,7 +28,8 @@ Special effects:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot 2023-09-09 at 18-04-09 Backstage Talks Magazine](https://github.com/peiyi-c/Frontend_Practice/assets/73789013/b95ffbaa-96c1-441d-8c2a-13d6a2409bd5)
+
 
 ### Links
 
@@ -46,6 +47,10 @@ Special effects:
 
 ### What I learned
 
-- <code>react-scroll: To enable the scroll effect in footer links I used <code>react-scroll</code>. This package allows me to define a more detailed scroll than <code>scroll-behavior: smooth</code> .
+- <code>react-scroll</code>: To enable the scroll effect in footer links I installed the package [react-scroll](https://www.npmjs.com/package/react-scroll). This package allows developers to define a more detailed scroll than the built in <code>scroll-behavior: smooth</code> in CSS.
 
-- <code>scroll-snap-\* </code>: The [original page]((https://www.frontendpractice.com/projects/backstage-talks) uses [fullpage.js](https://alvarotrigo.com/fullPage/) to create a whole page scroll effect. I use CSS <code>scroll-snap-\*</code> properties to create a similar effect.
+- <code>scroll-snap-\* </code>: The [original page: Backstage Talks](https://www.frontendpractice.com/projects/backstage-talks) uses [fullpage.js](https://alvarotrigo.com/fullPage/) to create a whole page scroll effect. I use CSS <code>scroll-snap-\*</code> properties to create a similar effect for desktop users.
+
+
+
+
