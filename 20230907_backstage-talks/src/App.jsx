@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, useMemo } from "react";
 import { Header } from "./Header";
 import { Magazine } from "./Magazine";
 import { Footer } from "./Footer";
@@ -8,15 +8,20 @@ import "./App.scss";
 export const DataContext = createContext({ issues });
 export const ColorContext = createContext(null);
 
-const colors = issues.map((issue) => {
-  return issue.color;
-});
-const tags = issues.map((issue) => {
-  return issue.number;
-});
 const issueHeight = 900;
 
 export default function App() {
+  const colors = useMemo(() => {
+    return issues.map((issue) => {
+      return issue.color;
+    });
+  }, []);
+  const tags = useMemo(() => {
+    return issues.map((issue) => {
+      return issue.number;
+    });
+  }, []);
+
   const [color, setColor] = useState(colors[0]);
   const [hash, setHash] = useState("");
 
