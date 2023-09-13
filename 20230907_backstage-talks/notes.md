@@ -35,3 +35,7 @@ https://stackoverflow.com/questions/54997918/eslint-throws-an-is-missing-in-prop
 ## scroll-snap 要放在 html 才有用(deploy 之後會變成#root 的 property)
 
 https://stackoverflow.com/questions/54903104/is-it-possible-to-apply-css-scroll-snap-to-the-html-tag-rather-than-the-body-tag
+
+## https://stackoverflow.com/questions/68513914/react-usememo-without-dependencies-array-vs-empty-array
+
+https://stackoverflow.com/questions/68513914/react-usememo-without-dependencies-array-vs-empty-array
