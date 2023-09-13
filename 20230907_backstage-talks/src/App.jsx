@@ -23,12 +23,12 @@ export default function App() {
   }, []);
 
   const [color, setColor] = useState(colors[0]);
-  const [hash, setHash] = useState("");
+  const [tag, setTag] = useState("");
 
   const handleScroll = () => {
     let currentYOffset = Math.round(window.pageYOffset / issueHeight);
     setColor(colors[currentYOffset]);
-    setHash(tags[currentYOffset]);
+    setTag(tags[currentYOffset]);
   };
 
   useEffect(() => {
@@ -43,10 +43,10 @@ export default function App() {
   }, [color]);
 
   useEffect(() => {
-    if (hash) {
-      window.location.href = "#" + hash;
+    if (tag) {
+      window.location.href = "#" + tag;
     }
-  }, [hash]);
+  }, [tag]);
 
   return (
     <>
